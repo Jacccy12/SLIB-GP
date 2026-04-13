@@ -1,0 +1,59 @@
+{
+  "dataset": {
+    "name": "cifar",
+    "gan_file_path": "../attack_dataset/CIFAR/ganset.txt",
+    "train_file": "../attack_dataset/CIFAR/trainset.txt",
+    "test_file": "../attack_dataset/CIFAR/testset.txt",
+    "img_path": "../attack_dataset/CIFAR/Img",
+    "model_name": "VGG16",
+    "n_classes": 10,
+    "device": "cuda",
+    "num_workers": 4,
+    "stage": "train_gan - first stage"
+  },
+  "train_gan - first stage": {
+    "lr": 0.0002,
+    "batch_size": 64,
+    "z_dim": 100,
+    "epochs": 100,
+    "n_critic": 5,
+    "unlabel_weight": 10
+  },
+  "ResNet": {
+    "epochs": 100,
+    "batch_size": 128,
+    "lr": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 5e-4,
+    "gamma": 0.1,
+    "adjust_epochs": [
+      60,
+      80
+    ]
+  },
+  "VGG16": {
+    "epochs": 100,
+    "batch_size": 128,
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 5e-4,
+    "gamma": 0.1,
+    "adjust_epochs": [
+      60,
+      80
+    ]
+  },
+  "VGG16_vib": {
+    "epochs": 100,
+    "batch_size": 128,
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 5e-4,
+    "gamma": 0.1,
+    "adjust_epochs": [60, 80]
+
+
+
+  }
+}
+
