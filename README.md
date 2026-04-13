@@ -33,7 +33,8 @@ The directory of datasets is organized as follows:
 
 
 # Defending against MI attacks 
-Here, we only provide the weights file of the well-trained defense models that achieve the best trade-off between model robustness and utility, which are highlighted in the experimental results.
+Here, we only provide the weights file of the well-trained defense models that achieve the best trade-off between model robustness and utility, which are highlighted in the experimental results. Other files in { https://pan.baidu.com/s/1iyLoMtsjKHDks2HA4MunYg 提取码: an9n}
+
 - GMI
     - Weights file (defense model / eval model / GAN) :
         - Place pretrained VGG16in `SLIB-GP/target_model/`
